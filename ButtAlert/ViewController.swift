@@ -9,11 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+    var toggleFlag: Bool = true
+  
     @IBOutlet weak var butPeople: UIButton!
     
     @IBAction func butPeopleFun(_ sender: Any) {
-      butPeople.tintColor = UIColor.init(named: "accent")
-      butPeople.setBackgroundImage(UIImage(named: "people"), for: .normal)
+      
+      if (toggleFlag == true) {
+        butPeople.tintColor = UIColor.init(named: "accent")
+        butPeople.setBackgroundImage(UIImage(named: "people"), for: .normal)
+        toggleFlag = false
+      } else {
+        butPeople.tintColor = UIColor.init(named: "highlight")
+        butPeople.setBackgroundImage(UIImage(named: "user_man_woman"), for: .normal)
+        toggleFlag = true
+      }
+      
     }
     
     
