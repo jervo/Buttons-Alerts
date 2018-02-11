@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var butPeople: UIButton!
+    
+    @IBAction func butPeopleFun(_ sender: Any) {
+        butPeople.tintColor = UIColor.init(named: "accent")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

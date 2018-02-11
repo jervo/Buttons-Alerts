@@ -23,6 +23,9 @@
                                 <rect key="frame" x="135" y="259" width="50" height="50"/>
                                 <color key="tintColor" name="highlight"/>
                                 <state key="normal" backgroundImage="user_man_woman"/>
+                                <connections>
+                                    <action selector="butPeopleFun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENp-ez-Oju"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="bkgrd"/>
@@ -34,6 +37,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="butPeople" destination="KkY-Mt-wID" id="FyG-rW-D2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
