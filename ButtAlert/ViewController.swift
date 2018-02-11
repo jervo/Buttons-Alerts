@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var butPeople: UIButton!
     
     @IBAction func butPeopleFun(_ sender: Any) {
-        butPeople.tintColor = UIColor.init(named: "accent")
+      butPeople.tintColor = UIColor.init(named: "accent")
+      butPeople.setBackgroundImage(UIImage(named: "people"), for: .normal)
     }
     
     
