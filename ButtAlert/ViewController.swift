@@ -26,6 +26,13 @@ class ViewController: UIViewController {
         toggleFlag = true
       }
       
+      let myAlert = UIAlertController(title: "Floor Preference", message: "My living room floor is?", preferredStyle: .alert)
+      
+      myAlert.addAction(UIAlertAction(title: "Carpet", style: .default, handler: nil))
+      myAlert.addAction(UIAlertAction(title: "Wood", style: .cancel, handler: nil))
+      
+      self.present(myAlert, animated: true)
+      
     }
     
     
